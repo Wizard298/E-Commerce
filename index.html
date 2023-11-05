@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storefy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .image {
+            animation-name: slide;
+            animation-duration: 6s;
+            animation-timing-function: forwards;
+            animation-iteration-count: infinite;
+        }
+
+        .automatic-slide .carousel-inner {
+            animation-name: slide;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes slide {}
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="nav1">
+                <div class="main-list" style="visibility: visible;"><a class="main-anchor" href="/">Storefy</a></div>
+                <div class="list"><a href="index.html">Home</a></div>
+                <div class="list"><a href="about.html">About</a></div>
+                <div class="list"><a href="contact.html">Contact</a></div>
+                <div class="list"><a href="service.html">Services</a></div>
+                <div class="list login"><a href="login.html">Login/SignUp</a></div>
+            </div>
+            <div class="nav2">
+                <button type="button" class="btn btn-outline-dark btn1" id="view">View</button>
+                <button type="button" class="btn btn-outline-dark btn2"><a class="access"
+                        href="login.html">Login</a></button>
+                <button type="button" class="btn btn-outline-dark btn3"><a class="access" href="signup.html">Sign
+                        Up</a></button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="search">
+        <nav class="navbar">
+            <form class="container-fluid">
+                <div class="input-group">
+                    <input type="text" class="form-control" list="datalistOptions" placeholder="Search Product"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <datalist id="datalistOptions">
+                    <option value="Mobile">
+                    <option value="Electronics">
+                    <option value="Sports">
+                    <option value="Furniture & Home Decors">
+                    <option value="Styles">
+                </datalist>
+            </form>
+        </nav>
+    </div>
+
+
+    <div class="content">
+        .
+        <div class="container text-center">
+            <h1>Storefy- Your Shopping Destination</h1>
+            <p class="my-2">Storefy is your one-stop e-commerce website for all your shopping needs. We provide a
+                diverse and ever-expanding range of products, from fashion and electronics to home decor and more. Our
+                mission is to offer you a seamless and enjoyable online shopping experience, with a commitment to
+                quality, affordability, and convenience.</p>
+        </div>
+    </div>
+
+
+
+    <div id="carouselExample" class="carousel slide automatic-slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img2.png" class="d-block w-100 img-fluid" alt="error">
+            </div>
+            <div class="carousel-item">
+                <img src="img4.webp" class="d-block w-100 img-fluid" alt="error">
+            </div>
+            <div class="carousel-item">
+                <img src="img3.jpeg" class="d-block w-100 img-fluid" alt="error">
+            </div>
+            <div class="carousel-item">
+                <img src="bigimg.webp" class="d-block w-100 img-fluid" alt="error">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <main>
+        <div class="container text-center my-3">
+            <button type="button" class="btn btn-outline-dark btnio"><a class="access"
+                    href="#mobile">Mobile</a></button>
+            <button type="button" class="btn btn-outline-dark btnio"><a class="access"
+                    href="#electronics">Electronics</a></button>
+            <button type="button" class="btn btn-outline-dark btnio"><a class="access"
+                    href="#sports">Sports</a></button>
+            <button type="button" class="btn btn-outline-dark btnio"><a class="access"
+                    href="#furniture">Furniture</a></button>
+            <button type="button" class="btn btn-outline-dark btnio"><a class="access"
+                    href="#styles">Styles</a></button>
+        </div>
+    </main>
+
+
+    <div class="box px-3 mx-3 my-4" id="mobile">
+        <h3 class="py-3">Best Mobiles</h3>
+        <div class="offers">
+            <div style="padding-bottom: 1em">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="images/img1.webp" class="img-fluid py-1" style="width: 10em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Nothing Phone 2</p>
+                        <a href="https://www.flipkart.com/tyy/4io/~cs-e8l8qk2i2m/pr?sid=tyy%2C4io&collection-tab-name=Nothing+Phone+2&param=3567&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJpbmNsIG9mIG9mZmVycyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk5vdGhpbmcgUGhvbmUgMiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6Ik1PQkdUQUhFWEdIRjI0TU0iLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19"
+                            style="font-weight: 600;" class="struggle">incl of offers</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="images/img2.webp" class="img-fluid py-1" style="width: 9.4em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Motorola Edge 40</p>
+                        <a href="https://www.flipkart.com/tyy/4io/~cs-4m4ckbu255/pr?sid=tyy%2C4io&collection-tab-name=edge40&param=4522&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJpbmNsIG9mIG9mZmVycyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk1vdG9yb2xhIEVkZ2UgNDAiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJNT0JHS0hOQlRWWlpVOFBIIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D"
+                            style="font-weight: 600;" class="struggle">incl of offers</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="images/img3.webp" class="img-fluid py-1" style="width: 9.2em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Oppo Reno 10</p>
+                        <a href="https://www.flipkart.com/search?q=oppo+reno+10&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&as-pos=1&as-type=RECENT&suggestionId=oppo+reno+10%7CMobiles&requestId=18641708-e6e5-40ba-a0c3-19aa8f6817aa&as-searchtext=oppo%20reno%2010"
+                            style="font-weight: 600;" class="struggle">incl of offers</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="images/img4.webp" class="img-fluid py-1" style="width: 10.65em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Realme 11 5g</p>
+                        <a href="https://www.flipkart.com/tyy/4io/~cs-xd30x6k53a/pr?sid=tyy%2C4io&collection-tab-name=realme+11+5G&param=5758&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJpbmNsIG9mIG9mZmVycyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlJlYWxtZSAxMSA1RyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6Ik1PQkdTMldGM05ZREJaS1ciLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19"
+                            style="font-weight: 600;" class="struggle">incl of offers</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="images/img5.webp" class="img-fluid py-1" style="width: 9.11em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Redmi Note 12 pro</p>
+                        <a href="https://www.flipkart.com/tyy/4io/~cs-xj7gdemumj/pr?sid=tyy%2C4io&collection-tab-name=Redmi+Note+12+Pro+5G&param=26748&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJpbmNsIG9mIG9mZmVycyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlJlZG1pIE5vdGUgMTIgUHJvIDVHIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiTU9CR0gyVVZNSEVQR1NITSIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX19fX0%3D"
+                            style="font-weight: 600;" class="struggle">incl of offers</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="images/img6.webp" class="img-fluid py-1" style="width: 9.4em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Vivo T2 5G</p>
+                        <a href="https://www.flipkart.com/search?q=Vivo%20T2%205G&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+                            style="font-weight: 600;" class="struggle">incl of offers</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="images/img7.webp" class="img-fluid py-1" style="width: 9.94em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Samsung S22 5G</p>
+                        <a href="https://www.flipkart.com/realme-c51-carbon-black-64-gb/p/itm0e93bcb87927f?pid=MOBGGG2YKYPWPCNP&param=23213&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJpbmNsIG9mIG9mZmVycyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlNhbXN1bmcgUzIyIDVHIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiTU9CR0dHMllLWVBXUENOUCIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX19fX0%3D"
+                            style="font-weight: 600;" class="struggle">incl of offers</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="images/img8.webp" class="img-fluid py-1" style="width: 9.2em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Infinix Note 30 5G</p>
+                        <a href="https://www.flipkart.com/tyy/4io/~cs-e8l8qk2i2m/pr?sid=tyy%2C4io&collection-tab-name=Nothing+Phone+2&param=3567&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJpbmNsIG9mIG9mZmVycyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk5vdGhpbmcgUGhvbmUgMiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6Ik1PQkdUQUhFWEdIRjI0TU0iLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19"
+                            style="font-weight: 600;" class="struggle">incl of offers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box px-3 mx-3 my-4" id="electronics">
+        <h3 class="py-3">Electronics</h3>
+        <div class="offers">
+            <div style="padding-bottom: 1em">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="electronic/img1.webp" class="img-fluid py-1" style="width: 8.5em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Headphone & More</p>
+                        <a href="https://www.flipkart.com/audio-video/~cs-wnejbsfh5y/pr?sid=0pm&collection-tab-name=Headphone%2BTWS%2BSpeakers&sort=popularity&pageUID=1675347129312&param=7676&hpid=UaxJdwydtKlKkgNPmXyFQKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTQ5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkFDQ0c2RFM3V0RKSEdXU0giLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJIZWFkcGhvbmVzICYgTW9yZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D"
+                            style="font-weight: 600;" class="struggle">From ₹499</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="electronic/img2.webp" class="img-fluid py-1" style="width: 8.3em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">iPad 9th Gen</p>
+                        <a href="https://www.flipkart.com/tyy/hry/~cs-aoif4ijpr2/pr?sid=tyy%2Chry&collection-tab-name=9th+Gen+on+Deal&sort=recency_desc&Param=456&p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock&hpid=MFJRpI8xa7HoG51b9lgLVKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJKdXN0IOKCuTIyLDc0OSoiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJUQUJHNlZOQ0hUUlpHTjlOIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiaVBhZCA5dGggR2VuIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D"
+                            style="font-weight: 600;" class="struggle">Just ₹22,749*</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="electronic/img3.webp" class="img-fluid py-1" style="width: 11.9em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Top Smartwatch Deals</p>
+                        <a href="https://www.flipkart.com/ajy/~cs-h6r5u47dtg/pr?sid=ajy&collection-tab-name=Top+100+Smartwatches&param=4568&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTg5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlRvcCBTbWFydHdhdGNoIERlYWxzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiU01XR1Q0WkZCRUdWU1NVWSIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX19fX0%3D"
+                            style="font-weight: 600;" class="struggle">From ₹899</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="electronic/img4.webp" class="img-fluid py-1" style="width: 4.77em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Best of Powerbanks</p>
+                        <a href="https://www.flipkart.com/mobile-accessories/power-banks/~cs-r5qbfknjcw/pr?sid=tyy%2C4mr%2Cfu6&collection-tab-name=TOP+SELLING+POWERBANKS&sort=popularity&hpid=_F2V5eZpFnBvZxUcdD9J1qp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTQ5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IlBXQkZWR1hYRkdFQllSRjUiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJCZXN0IE9mIFBvd2VyYmFua3MiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19"
+                            style="font-weight: 600;" class="struggle">From ₹499</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="electronic/img5.webp" class="img-fluid py-1" style="width: 7.8em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Mobile Chargers are here</p>
+                        <a href="https://www.flipkart.com/mobile-accessories/chargers/pr?sid=tyy%2C4mr%2Ctp2&hpid=Fmp8Axdg4kmvFDENDVcJQap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTk5Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiQUNDRzlWSjZQNzVCQUdHUyIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk1vYmlsZSBDaGFyZ2VycyBhcmUgaGVyZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D"
+                            style="font-weight: 600;" class="struggle">From ₹99</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="electronic/img6.webp" class="img-fluid py-1" style="width: 8.85em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Fire-Boltt Smartwatches</p>
+                        <a href="https://www.flipkart.com/ajy/~cs-d9s4p0y89h/pr?sid=ajy&collection-tab-name=Fire-Boltt+Smartwatches+Portfolio&hpid=XLPsKq3hOyGtPcXiSjUahqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTEsMDk5Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlcyI6WyJTTVdHRzNZWVdIVUJSWk42Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiRmlyZS1Cb2x0dCBTbWFydHdhdGNoZXMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=4b3e364d-db88-469f-b6be-2ff7b68c3246.BGVLUCLRWQ9L&ppt=dynamic&ppn=dynamic&ssid=7lg4howxao0000001698990074685&otracker=dynamic_omu_Top%252BDeals%252Bon%252BElectronics_31_From%2B%25E2%2582%25B91%252C099_BGVLUCLRWQ9L&cid=BGVLUCLRWQ9L"
+                            style="font-weight: 600;" class="struggle">From ₹1099</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="electronic/img7.webp" class="img-fluid py-1" style="width: 12.36em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Headphone Pouches</p>
+                        <a href="https://www.flipkart.com/mobile-accessories/headphone-pouches-cases/pr?sid=tyy%2C4mr%2Cjqb&p%5B%5D=facets.price_range.from%3D129&p%5B%5D=facets.price_range.to%3DMax&hpid=_MPCmR78yh17Bs7m_sdxRap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTk5Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlcyI6WyJIUFBHR0Q2UEdaRk5NVVVNIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiSGVhZHBob25lIFBvdWNoZXMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=01afc291-3555-4582-8012-98a8ab032c3a.NLS9NUUUKQAC&ppt=dynamic&ppn=dynamic&ssid=sbirqfq1740000001699093027530&otracker=dynamic_omu_Top%252BDeals%252Bon%252BElectronics_36_From%2B%25E2%2582%25B999_NLS9NUUUKQAC&cid=NLS9NUUUKQAC"
+                            style="font-weight: 600;" class="struggle">From ₹99</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="electronic/img8.webp" class="img-fluid py-1" style="width: 6.95em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Cover With stand</p>
+                        <a href="https://www.flipkart.com/mobile-accessories/cases-and-covers/pr?sid=tyy%2C4mr%2Cq2u&p%5B%5D=facets.theme%255B%255D%3DAstronaut%2BStand&hpid=L46aA4Q9wZ4O8b4Th57pJqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTE4OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZXMiOlsiQUNDR1pINUtFWjQ4SjZQVCJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkNvdmVycyBXaXRoIFN0YW5kIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&fm=neo%2Fmerchandising&iid=M_32edd571-f222-49fd-96cf-fbc46941189c_1.NRIBI4CA4J36&ppt=None&ppn=None&ssid=7lg4howxao0000001698990074685&otracker=dynamic_omu_infinite_Top%2BDeals%2Bon%2BElectronics_12_1.dealCard.OMU_INFINITE_NRIBI4CA4J36&cid=NRIBI4CA4J36"
+                            style="font-weight: 600;" class="struggle">From ₹189</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box px-3 mx-3 my-4" id="sports">
+        <h3 class="py-3">Sports</h3>
+        <div class="offers">
+            <div style="padding-bottom: 1em">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="Sports/img1.webp" class="img-fluid py-1" style="width: 11.9em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Cricket Bats</p>
+                        <a href="https://www.flipkart.com/sports/cricket/cricket-bat/pr?sid=abc%2C5lf%2Cp8v&p%5B%5D=facets.discount_range_v1%255B%255D%3D40%2525%2Bor%2Bmore&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BPlus&hpid=odyhAw6EwOMIlQUCpkVTpKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJNaW4gNDAlIE9mZiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkJBVEZUM0FSTkNXTURYWVUiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJDcmlja2V0IEJhdHMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=M_9ed63106-ab60-4b9b-9d3b-8b9d2de79059_2.X0LSLQIRNTMS&ppt=dynamic&ppn=dynamic&ssid=7lg4howxao0000001698990074685&otracker=clp_omu_Sports%2B%2526%2BFitness%2BEquipment_6_2.dealCard.OMU_sports-gear-essentials-store_sports-gear-essentials-store_X0LSLQIRNTMS_2&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Sports%2B%2526%2BFitness%2BEquipment_NA_dealCard_cc_6_NA_view-all_2&cid=X0LSLQIRNTMS"
+                            style="font-weight: 600;" class="struggle">From ₹179</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="Sports/img2.webp" class="img-fluid py-1" style="width: 3.75em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Badminton Racquets</p>
+                        <a href="https://www.flipkart.com/sports/badminton/badminton-racquet/pr?sid=abc%2Cegs%2C5wq&p%5B%5D=facets.discount_range_v1%255B%255D%3D40%2525%2Bor%2Bmore&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BPlus&hpid=LulV_S5d5j8kXHMYtd92Tap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTE5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IlJBUUZGVUZOUEczWllZUzUiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJCYWRtaW50b24gUmFjcXVldHMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=M_9ed63106-ab60-4b9b-9d3b-8b9d2de79059_2.30UEN15UTKBL&ppt=dynamic&ppn=dynamic&ssid=7lg4howxao0000001698990074685&otracker=clp_omu_Sports%2B%2526%2BFitness%2BEquipment_8_2.dealCard.OMU_sports-gear-essentials-store_sports-gear-essentials-store_30UEN15UTKBL_2&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Sports%2B%2526%2BFitness%2BEquipment_NA_dealCard_cc_8_NA_view-all_2&cid=30UEN15UTKBL"
+                            style="font-weight: 600;" class="struggle">From ₹199</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="Sports/img3.webp" class="img-fluid py-1" style="width: 8.8em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Cricket Balls</p>
+                        <a href="https://www.flipkart.com/all/~cs-y9end95tnk/pr?sid=all&collection-tab-name=Cricket+ball&hpid=Rp7EfXLchBKbc_Q_f2utzqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTE3OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkJBTEZWNEdXVzdVRllKV1MiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJDcmlja2V0IEJhbGwiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=M_9ed63106-ab60-4b9b-9d3b-8b9d2de79059_2.858VY2MLTQAB&ppt=dynamic&ppn=dynamic&ssid=7lg4howxao0000001698990074685&otracker=clp_omu_Sports%2B%2526%2BFitness%2BEquipment_3_2.dealCard.OMU_sports-gear-essentials-store_sports-gear-essentials-store_858VY2MLTQAB_2&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Sports%2B%2526%2BFitness%2BEquipment_NA_dealCard_cc_3_NA_view-all_2&cid=858VY2MLTQAB"
+                            style="font-weight: 600;" class="struggle">From ₹179</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="Sports/img4.webp" class="img-fluid py-1" style="width: 12em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Treadmills</p>
+                        <a href="https://www.flipkart.com/exercise-fitness/fitness-equipment/treadmills/pr?sid=qoc%2Camf%2Coyq&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BPlus&hpid=bdl15k2_Qf85Iw6T5wF5MKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTk5OTkiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJUUkRHVVk0MlFXTkZVTldIIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiVHJlYWRtaWxscyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D&fm=neo%2Fmerchandising&iid=M_b1f1b7a8-a73b-4e89-b06d-c3e05571a16e_2.NZWFEG3DDQ3S&ppt=browse&ppn=browse&ssid=dhccydjr800000001699029258204&otracker=clp_omu_Sports%2B%2526%2BFitness%2BEquipment_4_2.dealCard.OMU_sports-gear-essentials-store_sports-gear-essentials-store_NZWFEG3DDQ3S_2&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Sports%2B%2526%2BFitness%2BEquipment_NA_dealCard_cc_4_NA_view-all_2&cid=NZWFEG3DDQ3S"
+                            style="font-weight: 600;" class="struggle">From ₹999</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="Sports/img5.webp" class="img-fluid py-1" style="width: 12em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Non-Geared Cycle</p>
+                        <a href="https://www.flipkart.com/sports/cycling/cycles/pr?sid=abc%2Culv%2Cixt&p%5B%5D=facets.tyre_size%255B%255D%3D26%2Binches&sort=price_asc&p%5B%5D=facets.tyre_size%255B%255D%3D27.5%2Binches&p%5B%5D=facets.tyre_size%255B%255D%3D28%2Binches&p%5B%5D=facets.tyre_size%255B%255D%3D29%2Binches&p%5B%5D=facets.tyre_size%255B%255D%3D700C%2Binches&p%5B%5D=facets.price_range.from%3D4999&p%5B%5D=facets.price_range.to%3DMax&p%5B%5D=facets.brand%255B%255D%3DHERCULES&p%5B%5D=facets.brand%255B%255D%3DUrban%2BTerrain&p%5B%5D=facets.brand%255B%255D%3DHRX&p%5B%5D=facets.brand%255B%255D%3DLEADER&p%5B%5D=facets.brand%255B%255D%3DCRADIAC&p%5B%5D=facets.brand%255B%255D%3DHERO&p%5B%5D=facets.brand%255B%255D%3DLifelong&p%5B%5D=facets.brand%255B%255D%3DAdrenex%2Bby%2BFlipkart&p%5B%5D=facets.brand%255B%255D%3DVector%2B91&p%5B%5D=facets.brand%255B%255D%3DMODERN&p%5B%5D=facets.brand%255B%255D%3DFIREFOX%2BBIKES&p%5B%5D=facets.brand%255B%255D%3DMontra&p%5B%5D=facets.brand%255B%255D%3Dvesco&p%5B%5D=facets.brand%255B%255D%3DTRUELINE&p%5B%5D=facets.brand%255B%255D%3DThriller&p%5B%5D=facets.brand%255B%255D%3DUrban%2BStar&p%5B%5D=facets.brand%255B%255D%3DNinety%2Bone&p%5B%5D=facets.gear_type%255B%255D%3DNon%2BGeared&hpid=djkMflqYphJXN3evi7Bhs6p7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuSAzNzk5Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiQ0NFR0JIRzQ0UERCVVFHVSIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk5vbi1HZWFyZWQgQ3ljbGVzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D"
+                            style="font-weight: 600;" class="struggle">From ₹2599</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="Sports/img6.webp" class="img-fluid py-1" style="width: 6.88em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Cricket Bats</p>
+                        <a href="https://www.flipkart.com/sports/cricket/cricket-bat/pr?sid=abc%2C5lf%2Cp8v&p%5B%5D=facets.discount_range_v1%255B%255D%3D40%2525%2Bor%2Bmore&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BPlus&hpid=odyhAw6EwOMIlQUCpkVTpKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJNaW4gNDAlIE9mZiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkJBVEZUM0FSTkNXTURYWVUiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJDcmlja2V0IEJhdHMiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=M_9ed63106-ab60-4b9b-9d3b-8b9d2de79059_2.X0LSLQIRNTMS&ppt=dynamic&ppn=dynamic&ssid=7lg4howxao0000001698990074685&otracker=clp_omu_Sports%2B%2526%2BFitness%2BEquipment_6_2.dealCard.OMU_sports-gear-essentials-store_sports-gear-essentials-store_X0LSLQIRNTMS_2&otracker1=clp_omu_PINNED_neo%2Fmerchandising_Sports%2B%2526%2BFitness%2BEquipment_NA_dealCard_cc_6_NA_view-all_2&cid=X0LSLQIRNTMS"
+                            style="font-weight: 600;" class="struggle">From ₹599</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="Sports/img7.webp" class="img-fluid py-1" style="width: 8.8em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Creator Choice</p>
+                        <a href="https://www.flipkart.com/musical-instruments/studiostage-equipment-accessories/microphone/pr?sid=ypu%2Calc%2C3d4&param=234567890&hpid=RImnbAsdPAIVZWW6p7xyJKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTI5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6Ik1JQ0dEMkozSFRaN0c0ODkiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJDcmVhdG9yIENob2ljZSEiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=M_d3a9b978-49e2-4975-8677-31eef124a350_1.3OEGPXMIDVUO&ppt=hp&ppn=homepage&ssid=j2dsudrn4w0000001699031218483&otracker=dynamic_omu_infinite_Sports%2BToys%2B%2526%2BMore_4_1.dealCard.OMU_INFINITE_3OEGPXMIDVUO&cid=3OEGPXMIDVUO"
+                            style="font-weight: 600;" class="struggle">From ₹299</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="Sports/img8.webp" class="img-fluid py-1" style="width: 11.3em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Football</p>
+                        <a href="https://www.flipkart.com/sports/football/pr?sid=abc,gxg&p[]=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree&otracker=nmenu_sub_Sports%2C%20Books%20%26%20More_0_Football"
+                            style="font-weight: 600;" class="struggle">From ₹499</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box px-3 mx-3 my-4" id="furniture">
+        <h3 class="py-3">Furniture & Home Decors</h3>
+        <div class="offers">
+            <div style="padding-bottom: 1em">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="furniture/img1.webp" class="img-fluid py-1" style="width: 7.7em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Floor Lamps, Table Lamps</p>
+                        <a href="https://www.flipkart.com/home-lighting/decor-lighting-accessories/pr?sid=jhg%2C6w8&hpid=V-Qp3zrgIEAiW-28SVEEkqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVcHRvIDgwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJSQ0xHVUY0RlVKWk1ESzNYIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiRmxvb3IgTGFtcHMsIFRhYmxlIExhbXBzLi4iXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19"
+                            style="font-weight: 600;" class="struggle">Upto 80% Off</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="furniture/img2.webp" class="img-fluid py-1" style="width: 11.4em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Night Lamps</p>
+                        <a href="https://www.flipkart.com/all/~cs-6f6caac5ab5df96db18dac2f06ebca9e/pr?sid=jhg,6w8,jlo&marketplace=FLIPKART&restrictLocale=true"
+                            style="font-weight: 600;" class="struggle">Upto 50% Off</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="furniture/img3.webp" class="img-fluid py-1" style="width: 10.06em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Home Temple</p>
+                        <a href="https://www.flipkart.com/furniture/furniture-accessories/home-temple/pr?sid=wwe%2Cq7b%2C9zz&marketplace=FLIPKART&hpid=LAjFz_9NEAXsj-og4Wh6oqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTI5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkhURUdCWVVOUlo5WEVNS04iLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJIb21lIFRlbXBsZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D"
+                            style="font-weight: 600;" class="struggle">From ₹299</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="furniture/img4.webp" class="img-fluid py-1" style="width: 6.8em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Cabinet & Drawers</p>
+                        <a href="https://www.flipkart.com/furniture/drawers/cabinets-drawers/pr?sid=wwe%2Cxdf%2Cfcg&marketplace=FLIPKART&hpid=6ZhgOLiO0cyKuegQXLywoKp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTM0OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZXMiOlsiQ1NERkc5NE1XOFRORFJVNyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkNhYmluZXQgJiBEcmF3ZXJzIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&fm=neo%2Fmerchandising&iid=264d2512-ca12-4a29-9a66-36c85646d94e.CI3NF2TU1HAM&ppt=dynamic&ppn=dynamic&ssid=odh2011mr40000001699038034274&otracker=dynamic_omu_Furniture%252B%252526%252BMattresses_14_From%2B%25E2%2582%25B9349_CI3NF2TU1HAM&cid=CI3NF2TU1HAM"
+                            style="font-weight: 600;" class="struggle">From ₹349</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="furniture/img5.webp" class="img-fluid py-1" style="width: 12em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Rice Lights</p>
+                        <a href="https://www.flipkart.com/all/~cs-1621c123365e1b3c3552ac4552e179f7/pr?sid=jhg,6w8,jjg&marketplace=FLIPKART&restrictLocale=true"
+                            style="font-weight: 600;" class="struggle">Min 50% Off</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="furniture/img7.webp" class="img-fluid py-1" style="width: 11.99em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Disco Lights</p>
+                        <a href="https://www.flipkart.com/all/~cs-5e868373ed5b79f4a6465784c82f4baa/pr?sid=jhg,6w8,os7&marketplace=FLIPKART&restrictLocale=true"
+                            style="font-weight: 600;" class="struggle">Min. 50% Off</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="furniture/img6.webp" class="img-fluid py-1" style="width: 12em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Office Study Table</p>
+                        <a href="https://www.flipkart.com/furniture/tables/office-study-table/pr?sid=wwe%2Cki7%2Cl1t&marketplace=FLIPKART&hpid=AWZBiyxWlJpKYjL3zeFHNap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTEsMjk5Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlcyI6WyJPU1RHNkFKWUFSUlBVOEI2Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiT2ZmaWNlIFN0dWR5IHRhYmxlIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&fm=neo%2Fmerchandising&iid=10950d42-8d1e-4557-bb29-105b1ae0ad7f.FOI0CMII0S3I&ppt=dynamic&ppn=dynamic&ssid=odh2011mr40000001699038034274&otracker=dynamic_omu_Furniture%252B%252526%252BMattresses_19_From%2B%25E2%2582%25B91%252C299_FOI0CMII0S3I&cid=FOI0CMII0S3I"
+                            style="font-weight: 600;" class="struggle">From ₹1,299</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="furniture/img8.webp" class="img-fluid py-1" style="width: 12em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Bean Bags</p>
+                        <a href="https://www.flipkart.com/furniture/bean-bags/bean-bags/pr?sid=wwe%2C4n6%2Czet&hpid=Ufw5b01m5xpneETyP3Vbxap7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJGcm9tIOKCuTk5OSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IkJFQkdSRUY4S0JWTk1GS1kiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJCZWFuIEJhZ3MiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19&fm=neo%2Fmerchandising&iid=M_2ab37abc-7c95-4ed3-902b-185a4ace8327_1.JND728YZKODZ&ppt=None&ppn=None&ssid=odh2011mr40000001699038034274&otracker=dynamic_omu_infinite_Furniture%2B%2526%2BMattresses_10_1.dealCard.OMU_INFINITE_JND728YZKODZ&cid=JND728YZKODZ"
+                            style="font-weight: 600;" class="struggle">From ₹999</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box px-3 mx-3 my-4" id="styles">
+        <h3 class="py-3">Styles</h3>
+        <div class="offers">
+            <div style="padding-bottom: 1em">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="fashion/img1.webp" class="img-fluid py-1" style="width: 9.7em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Men's Sweatshirts</p>
+                        <a href="https://www.flipkart.com/all/~cs-c7a8981ad3bb2917239248c24b8d478f/pr?sid=clo,qvw,64a,vui&marketplace=FLIPKART&restrictLocale=true"
+                            style="font-weight: 600;" class="struggle">Min. 50% Off</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="fashion/img2.webp" class="img-fluid py-1" style="width: 9.5em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Men's Jackets</p>
+                        <a href="https://www.flipkart.com/all/~cs-0c0343d2ea3f9ad1de25446ac9ae8d6d/pr?sid=clo,qvw,z0g,jbm&marketplace=FLIPKART&restrictLocale=true"
+                            style="font-weight: 600;" class="struggle">Min. 40% Off</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="fashion/img3.webp" class="img-fluid py-1" style="width: 11.95em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">HRX, FILA & More</p>
+                        <a href="https://www.flipkart.com/mens-footwear/~casual-and-sports-shoes/pr?sid=osp%2Ccil&p%5B%5D=facets.brand%255B%255D%3DWROGN%2BACTIVE&p%5B%5D=facets.brand%255B%255D%3DPUMA&p%5B%5D=facets.brand%255B%255D%3DADIDAS&p%5B%5D=facets.brand%255B%255D%3DNIKE&p%5B%5D=facets.brand%255B%255D%3DREEBOK&p%5B%5D=facets.brand%255B%255D%3DHRX%2Bby%2BHrithik%2BRoshan&p%5B%5D=facets.brand%255B%255D%3DYONEX&p%5B%5D=facets.brand%255B%255D%3DPOWER&p%5B%5D=facets.brand%255B%255D%3DSLAZENGER&p%5B%5D=facets.brand%255B%255D%3DSkechers&p%5B%5D=facets.brand%255B%255D%3DNIVIA&p%5B%5D=facets.brand%255B%255D%3DLOTTO&p%5B%5D=facets.brand%255B%255D%3DNew%2BBalance&p%5B%5D=facets.brand%255B%255D%3DBROOKS&p%5B%5D=facets.brand%255B%255D%3DXtep&p%5B%5D=facets.brand%255B%255D%3DFILA&p%5B%5D=facets.brand%255B%255D%3DSALOMON&p%5B%5D=facets.brand%255B%255D%3DSAUCONY&p%5B%5D=facets.brand%255B%255D%3DALTRA&p%5B%5D=facets.brand%255B%255D%3DCAMPUS&p%5B%5D=facets.brand%255B%255D%3DANTA&p%5B%5D=facets.brand%255B%255D%3DAsics&p%5B%5D=facets.brand%255B%255D%3DUNDER%2BARMOUR&p%5B%5D=facets.price_range.from%3DMin&p%5B%5D=facets.price_range.to%3D899&hpid=VzcjFqJhxBGiUyumoansDqp7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVbmRlciDigrk4OTkiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJTSE9HQU5BQU1XTlJLTkhDIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiSFJYLCBGSUxBICAmIE1vcmUiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19"
+                            style="font-weight: 600;" class="struggle">Under ₹899</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="fashion/img4.webp" class="img-fluid py-1" style="width: 11.95em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Kid's Winter Wear</p>
+                        <a href="https://www.flipkart.com/clo/qvw/~cs-zklav9slwv/pr?sid=clo%2Cqvw&collection-tab-name=Kids+Winterwear&param=823&p%5B%5D=facets.price_range.from%3DMin&p%5B%5D=facets.price_range.to%3D399&param=0092&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVbmRlciDigrkzOTkiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJLaWRzJyBXaW50ZXIgV2VhciJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sImhlcm9QaWQiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5IjoiaGVyb1BpZCIsImluZmVyZW5jZVR5cGUiOiJQSUQiLCJ2YWx1ZSI6IlNXU0dSQUZZQTlBVUVHUEgiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19"
+                            style="font-weight: 600;" class="struggle">Under ₹399</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="fashion/img5.webp" class="img-fluid py-1" style="width: 8.94em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Action, Density & more</p>
+                        <a href="https://www.flipkart.com/mens-footwear/pr?sid=osp%2Ccil&p%5B%5D=facets.brand%255B%255D%3DKILLER&p%5B%5D=facets.brand%255B%255D%3DAfrojack&p%5B%5D=facets.brand%255B%255D%3DNEW%2BLIMITS&p%5B%5D=facets.brand%255B%255D%3DOMEE%2BGOLD&p%5B%5D=facets.brand%255B%255D%3DWUGATTI&p%5B%5D=facets.brand%255B%255D%3DReal%2BBliss&p%5B%5D=facets.brand%255B%255D%3Daction&p%5B%5D=facets.brand%255B%255D%3DAbros&p%5B%5D=facets.brand%255B%255D%3DPicaaso&p%5B%5D=facets.brand%255B%255D%3DPlaeto&p%5B%5D=facets.brand%255B%255D%3DRoadster&p%5B%5D=facets.brand%255B%255D%3DMr.SHOES&p%5B%5D=facets.brand%255B%255D%3DKolhapuri&p%5B%5D=facets.brand%255B%255D%3DRapidBox&p%5B%5D=facets.brand%255B%255D%3DSHOEFLY&p%5B%5D=facets.brand%255B%255D%3DJoker&p%5B%5D=facets.brand%255B%255D%3DHirel%2527s&p%5B%5D=facets.brand%255B%255D%3Dlejano&p%5B%5D=facets.brand%255B%255D%3DROCKFIELD&p%5B%5D=facets.brand%255B%255D%3Ddensity&p%5B%5D=facets.brand%255B%255D%3DKraasa&p%5B%5D=facets.brand%255B%255D%3DBIG%2BFOX&p%5B%5D=facets.brand%255B%255D%3DWAAN&p%5B%5D=facets.brand%255B%255D%3DZixer&p%5B%5D=facets.brand%255B%255D%3DBucik&p%5B%5D=facets.brand%255B%255D%3DEl%2BPaso&p%5B%5D=facets.brand%255B%255D%3DRUN%2BSEVEN&p%5B%5D=facets.brand%255B%255D%3DSvaar&p%5B%5D=facets.brand%255B%255D%3DBersache&p%5B%5D=facets.price_range.from%3DMin&p%5B%5D=facets.price_range.to%3D399&param=43&hpid=sMDeMVEFv9aZODuO_D5CQ6p7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVbmRlciDigrkzOTkiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJTRkZHRDQ5NEhSUlVISFI2IiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiQWN0aW9uLCBEZW5zaXR5ICYgbW9yZS4uIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D"
+                            style="font-weight: 600;" class="struggle">Under ₹399</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="fashion/img6.webp" class="img-fluid py-1" style="width: 8.25em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Armani Exchange & More</p>
+                        <a href="https://www.flipkart.com/watches/wrist-watches/pr?sid=r18%2Cf13&p%5B%5D=facets.price_range.from%3D3000&p%5B%5D=facets.price_range.to%3DMax&p%5B%5D=facets.brand%255B%255D%3DTOMMY%2BHILFIGER&p%5B%5D=facets.brand%255B%255D%3DEMPORIO%2BARMANI&p%5B%5D=facets.brand%255B%255D%3DA%252FX%2BARMANI%2BEXCHANGE&p%5B%5D=facets.brand%255B%255D%3DMICHAEL%2BKORS&p%5B%5D=facets.brand%255B%255D%3DSKAGEN&p%5B%5D=facets.brand%255B%255D%3DDIESEL&p%5B%5D=facets.brand%255B%255D%3DGUESS&p%5B%5D=facets.brand%255B%255D%3DCASIO&p%5B%5D=facets.brand%255B%255D%3DFOSSIL&p%5B%5D=facets.brand%255B%255D%3DSCUDERIA%2BFERRARI&p%5B%5D=facets.brand%255B%255D%3DLACOSTE&p%5B%5D=facets.brand%255B%255D%3DCITIZEN&p%5B%5D=facets.brand%255B%255D%3DSeiko&p%5B%5D=facets.brand%255B%255D%3DDANIEL%2BWELLINGTON&p%5B%5D=facets.brand%255B%255D%3DGIORDANO&p%5B%5D=facets.brand%255B%255D%3DKenneth%2BCole&p%5B%5D=facets.brand%255B%255D%3DPOLICE&p%5B%5D=facets.brand%255B%255D%3DOBAKU&p%5B%5D=facets.brand%255B%255D%3DSuperdry&p%5B%5D=facets.brand%255B%255D%3DCAT&p%5B%5D=facets.brand%255B%255D%3DFurla&p%5B%5D=facets.brand%255B%255D%3DFrench%2BConnection&p%5B%5D=facets.brand%255B%255D%3DMovado&p%5B%5D=facets.brand%255B%255D%3DU.S.%2BPOLO%2BASSN.&p%5B%5D=facets.brand%255B%255D%3DHUGO%2BBOSS&p%5B%5D=facets.brand%255B%255D%3DREEBOK&p%5B%5D=facets.brand%255B%255D%3DGIO%2BCOLLECTION&p%5B%5D=facets.brand%255B%255D%3DBen%2BSherman&p%5B%5D=facets.discount_range_v1%255B%255D%3D50%2525%2Bor%2Bmore&param=45&hpid=tyBrG_yvlJ4N4JU1tIXdx6p7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVcCB0byA4MCUgb2ZmIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fSwiaGVyb1BpZCI6eyJzaW5nbGVWYWx1ZUF0dHJpYnV0ZSI6eyJrZXkiOiJoZXJvUGlkIiwiaW5mZXJlbmNlVHlwZSI6IlBJRCIsInZhbHVlIjoiV0FURUhSSzdEVkpWV1JNUCIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX0sInRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkFybWFuaSBFeGNoYW5nZSwgR3Vlc3MgJiBtb3JlIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&fm=neo%2Fmerchandising&iid=M_531c6464-cefa-4feb-8a11-0b6b99dbdf96_1.FSHAKN4G4868&ppt=hp&ppn=homepage&ssid=px18vvv1og0000001699038660316&otracker=dynamic_omu_infinite_Top%2BDeals_10_1.dealCard.OMU_INFINITE_FSHAKN4G4868&cid=FSHAKN4G4868"
+                            style="font-weight: 600;" class="struggle">Upto 80% Off</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="fashion/img7.webp" class="img-fluid py-1" style="width: 11.92em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">Men's Tracksuits</p>
+                        <a href="https://www.flipkart.com/all/~cs-6950239e42b8e6d75b50a6cd3c28459c/pr?sid=clo,nyk,zp4&marketplace=FLIPKART&restrictLocale=true"
+                            style="font-weight: 600;" class="struggle">Min. 50% Off</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-bottom: 1em; margin-left: 1em;">
+                <div class="card text-center" style="width: 13rem;">
+                    <div>
+                        <img src="fashion/img8.webp" class="img-fluid py-1" style="width: 9.95em;" alt="error">
+                    </div>
+                    <div style="padding: 0.5em 0em;">
+                        <p style="margin-bottom: 0px;">DSC & more</p>
+                        <a href="https://www.flipkart.com/mens-footwear/mens-sports-shoes/pr?sid=osp%2Ccil%2C1cu&p%5B%5D=facets.price_range.from%3DMin&p%5B%5D=facets.price_range.to%3D899&p%5B%5D=facets.type%255B%255D%3DCricket%2BShoes&p%5B%5D=facets.brand%255B%255D%3DWROGN%2BACTIVE&p%5B%5D=facets.brand%255B%255D%3DPUMA&p%5B%5D=facets.brand%255B%255D%3DADIDAS&p%5B%5D=facets.brand%255B%255D%3DNIKE&p%5B%5D=facets.brand%255B%255D%3DHRX%2Bby%2BHrithik%2BRoshan&p%5B%5D=facets.brand%255B%255D%3DYONEX&p%5B%5D=facets.brand%255B%255D%3DPOWER&p%5B%5D=facets.brand%255B%255D%3DSLAZENGER&p%5B%5D=facets.brand%255B%255D%3DSkechers&p%5B%5D=facets.brand%255B%255D%3DNIVIA&p%5B%5D=facets.brand%255B%255D%3DLOTTO&p%5B%5D=facets.brand%255B%255D%3DNew%2BBalance&p%5B%5D=facets.brand%255B%255D%3DBROOKS&p%5B%5D=facets.brand%255B%255D%3DXtep&p%5B%5D=facets.brand%255B%255D%3DFILA&p%5B%5D=facets.brand%255B%255D%3DSALOMON&p%5B%5D=facets.brand%255B%255D%3DSAUCONY&p%5B%5D=facets.brand%255B%255D%3DALTRA&p%5B%5D=facets.brand%255B%255D%3DCAMPUS&p%5B%5D=facets.brand%255B%255D%3DANTA&p%5B%5D=facets.brand%255B%255D%3DAsics&p%5B%5D=facets.brand%255B%255D%3DUNDER%2BARMOUR&p%5B%5D=facets.brand%255B%255D%3DReebok&p%5B%5D=facets.brand%255B%255D%3DDSC&hpid=xjfV2mqNt1x5bYrVUSt9Y6p7_Hsxr70nj65vMAAFKlc%3D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJVbmRlciDigrk4OTkiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWVzIjpbIlNIT0dOOEg4NEtZNVNCU1YiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJ0aXRsZSI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ0aXRsZSIsImluZmVyZW5jZVR5cGUiOiJUSVRMRSIsInZhbHVlcyI6WyJEU0MgJiBtb3JlIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D&fm=neo%2Fmerchandising&iid=b3ac99cc-bc71-4f1b-8312-d089fae54359.TEM7KZUTUZ6U&ppt=dynamic&ppn=dynamic&ssid=y1m3d2eggw0000001699039664355&otracker=dynamic_omu_Fashion%252BBest%252BSellers_17_Under%2B%25E2%2582%25B9899_TEM7KZUTUZ6U&cid=TEM7KZUTUZ6U"
+                            style="font-weight: 600;" class="struggle">Under ₹899</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="foot my-3">
+            <div class="firstcol">
+                <div class="about">ABOUT</div>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Contact Us</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">About Us</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Careers</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Storefy Stories</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Press</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Storefy Wholesale</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Corporate Information</a>
+            </div>
+            <div class="firstcol">
+                <div class="about">HELP</div>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Payments</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Shipping</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Cancellation & Returns</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">FAQ</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Report</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Report Infringement</a>
+            </div>
+            <div class="firstcol">
+                <div class="about">CONSUMER POLICY</div>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Return Policy</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Terms Of Use</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Security</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Privacy</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Sitemap</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Grievance Redressal</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">EPR Compliance</a>
+            </div>
+            <div class="firstcol">
+                <div class="about">SOCIAL</div>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Facebook</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Twitter</a>
+                <a href="/helpcentre?otracker=undefined_footer_navlinks" class="ab1">Youtube</a>
+            </div>
+        </div>
+        <div class="imgvisa text-center">
+            <!-- <span class="copyright">© 2022-2023 <span> Storefy.com </span></span> -->
+            <div class="copyright">© 2022-2023 <span> Storefy.com </span></div>
+            <img src="visa.png" class="img-fluid visa" alt="Error">
+        </div>
+    </footer>
+
+
+    <script>
+        let view = document.getElementById('view')
+        let show = document.querySelector('.nav1')
+        view.addEventListener("click", function () {
+            show.classList.toggle("nav3")
+        })
+
+
+        // Using an ID selector
+        // const sectionById = document.getElementById('mobile');
+        // sectionById.scrollIntoView({ behavior: 'smooth' });
+
+        // Using a class selector
+        const sectionsByClass = document.querySelectorAll('.box');
+        sectionsByClass[0].scrollIntoView({ behavior: 'smooth' });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

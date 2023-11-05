@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box{
+            width: 90%;
+            margin: 1em auto;
+            padding: 2.1em;
+            border: 1px solid rgb(232, 228, 228);
+            border-radius: 21px;
+            box-shadow: black 0px 1px 6px;
+        }
+        li{
+            list-style-type: style;;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="nav1">
+                <div class="main-list" style="visibility: visible;"><a class="main-anchor" href="/">Storefy</a></div>
+                <div class="list"><a href="index.html">Home</a></div>
+                <div class="list"><a href="about.html">About</a></div>
+                <div class="list"><a href="contact.html">Contact</a></div>
+                <div class="list"><a href="service.html">Services</a></div>
+                <div class="list login"><a href="login.html">Login/SignUp</a></div>
+            </div>
+            <div class="nav2">
+                <button type="button" class="btn btn-outline-dark btn1" id="view">View</button>
+                <button type="button" class="btn btn-outline-dark btn2"><a class="access"
+                    href="login.html">Login</a></button>
+                <button type="button" class="btn btn-outline-dark btn3"><a class="access"
+                    href="signup.html">Sign Up</a></button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="box">
+        <h2>Our Services</h2>
+        <p>At Storefy App, we go the extra mile to ensure your shopping experience is as convenient and enjoyable as possible. Explore the range of services we provide to enhance your online shopping journey:</p>
+
+
+        <ol type="1">
+            <li><b>Wide Product Selection: </b>We offer a diverse range of products, from fashion and electronics to home decor and more. Our extensive product catalog ensures you'll find what you're looking for.</li>
+            <li><b>Secure Shopping: </b>Your security is our priority. Shop with confidence, knowing that your personal and financial information is protected through industry-standard security measures.</li>
+            <li><b>Easy Navigation:  </b>Our user-friendly website and mobile app are designed to make your shopping experience seamless and intuitive. Find products, view details, and make purchases with ease.</li>
+            <li><b>Fast Delivery: </b>We understand the importance of receiving your purchases promptly. We offer fast and reliable shipping options to get your products to you in a timely manner.</li>
+            <li><b>Return and Exchange: </b> In the rare event that you're not completely satisfied with your purchase, our hassle-free return and exchange policy ensures a smooth process.</li>
+            <li><b>Customer Support:  </b>Our dedicated customer support team is ready to assist you with any questions, concerns, or issues. Contact us via email or phone for prompt assistance.</li>
+            <li><b>Secure Payment Options: </b>Choose from a variety of secure payment methods to complete your transactions, including credit cards, digital wallets, and more.</li>
+            <li><b>Promotions and Discounts: </b> Stay updated on our latest promotions, special offers, and discounts to maximize your savings while shopping with us.</li>
+            <li><b>Order Tracking: </b> Keep an eye on the status of your orders with our order tracking feature. Know when your purchases will arrive.</li>
+            <li><b>Product Reviews: </b> Benefit from the experiences of other customers by reading and leaving product reviews. Share your thoughts and help others make informed choices.</li>
+            <li><b>Mobile App Convenience: </b> Download our mobile app to shop on the go, receive exclusive app-only offers, and enjoy a more personalized shopping experience.</li>
+            <li><b>Wishlist Feature: </b> Save products you love for later with our wishlist feature, making it easy to find and purchase them when you're ready.</li>
+            <li><b>Secure Shopping Guarantee:  </b> We stand behind the safety and security of your online shopping experience, providing you with peace of mind.</li>
+        </ol>
+
+        <p>At Storefy App, we are committed to providing you with top-notch services that make your online shopping journey delightful and worry-free. We continually strive to enhance and expand our offerings to meet your evolving needs.</p>
+
+        <p>Feel free to customize this "Our Services" section based on the specific services and features your e-commerce platform offers. This section will help customers understand the various benefits and advantages of shopping on your website, Storefy App.</p>
+    </div>
+
+    <script>
+        let view = document.getElementById('view')
+        let show = document.querySelector('.nav1')
+        view.addEventListener("click", function () {
+            show.classList.toggle("nav3")
+        })
+
+
+        // Using an ID selector
+        // const sectionById = document.getElementById('mobile');
+        // sectionById.scrollIntoView({ behavior: 'smooth' });
+
+        // Using a class selector
+        const sectionsByClass = document.querySelectorAll('.box');
+        sectionsByClass[0].scrollIntoView({ behavior: 'smooth' });
+
+    </script>
+</body>
+</html>

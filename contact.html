@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box{
+            width: 90%;
+            margin: 1em auto;
+            padding: 2.1em;
+            border: 1px solid rgb(232, 228, 228);
+            border-radius: 21px;
+            box-shadow: black 0px 1px 6px;
+        }
+        li{
+            list-style:disc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="nav1">
+                <div class="main-list" style="visibility: visible;"><a class="main-anchor" href="/">Storefy</a></div>
+                <div class="list"><a href="index.html">Home</a></div>
+                <div class="list"><a href="about.html">About</a></div>
+                <div class="list"><a href="contact.html">Contact</a></div>
+                <div class="list"><a href="service.html">Services</a></div>
+                <div class="list login"><a href="login.html">Login/SignUp</a></div>
+            </div>
+            <div class="nav2">
+                <button type="button" class="btn btn-outline-dark btn1" id="view">View</button>
+                <button type="button" class="btn btn-outline-dark btn2"><a class="access"
+                    href="login.html">Login</a></button>
+                <button type="button" class="btn btn-outline-dark btn3"><a class="access"
+                    href="signup.html">Sign Up</a></button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="box">
+        <h2>Contact Us</h2>
+        <p>At Storefy App, we value your feedback and are here to assist you with any questions or concerns. There are several ways to get in touch with us:</p>
+
+
+        <h2>Customer Support</h2>
+        <p>Our dedicated customer support team is available to assist you with any inquiries or issues you may have. You can reach us via email or phone:</p>
+        <ol>
+            <li>Email: support@storefyapp.com</li>
+            <li>Phone: +1-555-123-4567</li>
+        </ol>
+        
+        <h2>Business Inquiries</h2>
+        <p>For partnership opportunities, vendor inquiries, or any other business-related matters, please reach out to our business development team:</p>
+        <ol>
+            <li>Email: business@storefyapp.com</li>
+        </ol>
+
+        <h2>Contact with Us</h2>
+        <p>Stay updated with the latest news, promotions, and product releases by following us on social media:</p>
+        <ol>
+            <li>Facebook: facebook.com/storefyapp</li>
+            <li>Instagram: instagram.com/storefyapp</li>
+            <li>Twitter: twitter.com/storefyapp</li>
+        </ol>
+
+        <p>Please make sure to replace the contact information with your actual email address, phone number, mailing address, and social media links. This contact section will help your customers easily get in touch with your team for inquiries, support, or any other communication needs.</p>
+    </div>
+
+    <script>
+        let view = document.getElementById('view')
+        let show = document.querySelector('.nav1')
+        view.addEventListener("click", function () {
+            show.classList.toggle("nav3")
+        })
+
+
+        // Using an ID selector
+        // const sectionById = document.getElementById('mobile');
+        // sectionById.scrollIntoView({ behavior: 'smooth' });
+
+        // Using a class selector
+        const sectionsByClass = document.querySelectorAll('.box');
+        sectionsByClass[0].scrollIntoView({ behavior: 'smooth' });
+
+    </script>
+</body>
+</html>
